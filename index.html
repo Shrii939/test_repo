@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Sign In Form</title>
+    <link rel="icon" type="image/png" href="logo/logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Link to your external CSS file -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-panel">
+        <div class="center">
+          <form action="login.php" method="POST">
+            <h2 class="legend">LOGIN</h2>
+            <input type="text" name="username" placeholder="Username" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit">Log In</button>
+            <p class="mobile-block">
+              Not a member? <span class="toggle-left">Sign Up</span>
+            </p>
+          </form>
+        </div>
+        <p class="foot-left">
+          Contact:<br />
+          <a
+            href="https://www.linkedin.com/in/vikramgirishthunga/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i>LINKEDIN |</a
+          ><br />
+          <a href="https://github.com/vikramgt" target="_blank">
+            <i class="fab fa-github"></i>GITHUB
+          </a>
+        </p>
+      </div>
+      <div class="right-panel">
+        <div class="center">
+          <form action="signup.php" method="POST">
+            <h2 class="legend">SIGN UP</h2>
+            <input type="text" name="name" placeholder="Full Name" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="password" name="password" placeholder="Password" />
+            <button type="submit">Sign Up</button>
+            <p class="mobile-block">
+              Already a member? <span class="toggle-right">Login</span>
+            </p>
+          </form>
+        </div>
+        <p class="foot-right">
+          Contact:<br />
+          <a
+            href="https://www.linkedin.com/in/vikramgirishthunga/"
+            target="_blank"
+          >
+            <i class="fab fa-linkedin"></i> LINKEDIN </a
+          ><br />
+          <a href="https://github.com/vikramgt" target="_blank">
+            <i class="fab fa-github"></i> GITHUB
+          </a>
+        </p>
+      </div>
+      <div class="overlay-panel overlay-left">
+        <!-- Dynamic content based on JavaScript -->
+        <h2 id="overlay-heading">Welcome Back!</h2>
+        <p id="overlay-text">
+          To keep connected with us, please login with your personal info.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Link to your external JavaScript file -->
+  </body>
+</html>
